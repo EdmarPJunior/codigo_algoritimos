@@ -49,18 +49,18 @@ int main() {
 		printf("Codigo: ");
 		scanf("%d", &cliente[i].codigo);
 		
-		printf("Nome:  ");
-	  	fflush(stdin);
-	  	gets(cliente[i].nome);
-	  	
-	  	printf("Idade: ");
-	  	scanf("%d", &cliente[i].idade);
-	  	
-	  	printf("Sexo (M/F): ");
-	  	scanf(" %c", &cliente[i].sexo);
-	  	
-	  	printf("Salario: ");
-	  	scanf("%f", &cliente[i].salario);
+		printf("Nome: ");
+		fflush(stdin);
+		gets(cliente[i].nome);
+		
+		printf("Idade: ");
+		scanf("%d", &cliente[i].idade);
+		
+		printf("Sexo (M/F): ");
+		scanf(" %c", &cliente[i].sexo);
+		
+		printf("Salario: ");
+		scanf("%f", &cliente[i].salario);
 	}
 	
 	
@@ -71,7 +71,7 @@ int main() {
 	soma = somaIdades();
 	
 	//CÁLCULA DA MÉDIA
-	media = soma / 5;
+	media = (float)soma / 5;
 	
 	printf("\n\nA soma das idades e: %d", soma);
 	printf("\nA media das idades e: %.2f", media);
