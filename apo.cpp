@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+
+//DECLARAÇÃO STRUCT
 struct dados {
 	int codigo;
 	int idade;
@@ -8,6 +10,7 @@ struct dados {
 	float salario;
 };
 
+//vARIAVEL GLOBAL
 dados cliente[5];
 
 
@@ -37,6 +40,7 @@ int somaIdades() {
 		
 }
 
+//PROGRAMA PRINCIPAL
 int main() {
 	int i, soma;
 	float media;
@@ -73,6 +77,7 @@ int main() {
 	//CÁLCULA DA MÉDIA
 	media = (float)soma / 5;
 	
+	//IMPRIME RESULTADO NA TELA
 	printf("\n\nA soma das idades e: %d", soma);
 	printf("\nA media das idades e: %.2f", media);
 	
